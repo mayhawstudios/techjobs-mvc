@@ -36,7 +36,7 @@
 
     <hr />
 
-    <h3 th:text="${jobs.size()} + ' Result(s)'"></h3>
+    <h3 th:if="${jobs}" th:text="${jobs.size()} + ' Result(s)'"></h3>
 
     <div th:if="${jobs} and ${jobs.size()}">
 
